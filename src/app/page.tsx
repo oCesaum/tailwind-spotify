@@ -1,6 +1,6 @@
 import { Footer } from '@/components/Footer'
 import { Sidebar } from '@/components/Sidebar'
-import { Home as ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { Home as ChevronLeft, ChevronLeftIcon, ChevronRightIcon, Play } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Home() {
@@ -10,8 +10,8 @@ export default function Home() {
         <Sidebar />
         <main className="flex-1 p-6">
           <div className='flex items-center gap-4'>
-            <button className='rounded-full bg-black/40 p-1'><ChevronLeft /></button>
-            <button className='rounded-full bg-black/40 p-1'><ChevronRight /></button>
+            <button className='rounded-full bg-black/40 p-1'><ChevronLeftIcon /></button>
+            <button className='rounded-full bg-black/40 p-1'><ChevronRightIcon /></button>
           </div>
 
           <h1 className='font-semibold text-3xl mt-10'>Good Afternoon</h1>
