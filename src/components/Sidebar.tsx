@@ -2,7 +2,7 @@ import { ArrowRight, ChevronDown, Home as HomeIcon, Library, Plus, Search } from
 
 export function Sidebar() {
   return (
-    <aside className="w-96 bg-zinc-950 px-2 pb-2">
+    <aside className="w-72 lg:w-96 bg-zinc-950 px-2 pb-2">
       <nav className='bg-white/5 space-y-5 mt-2 p-5 rounded-lg'>
         <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'><HomeIcon /> Home</a>
         <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-300 transition-colors'><Search /> Search</a>
