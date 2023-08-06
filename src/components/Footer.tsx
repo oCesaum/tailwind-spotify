@@ -1,15 +1,15 @@
-import { Play, Shuffle, SkipBack, SkipForward, Repeat, Mic2, LayoutList, Laptop2, Volume, Maximize2 } from "lucide-react";
+import { Laptop2, LayoutList, Maximize2, Mic2, Play, Repeat, Shuffle, SkipBack, SkipForward, Volume } from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-zinc-800 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
-      <div className="flex items-center gap-3">
+    <footer className="bg-zinc-950 px-6 py-4 flex items-center justify-between">
+      <div className="flex items-center gap-3 max-h-20 rounded-lg">
         <Image
-          src="/mercury.jpg"
-          className="w-full"
-          width={56}
-          height={56}
+          src="/mix of imagine dragons.jfif"
+          className="w-16 h-16"
+          width={120}
+          height={120}
           alt="Capa do álbum Mercury - acts 1 da banda Imagine Dragons"
         />
         <div className="flex flex-col">

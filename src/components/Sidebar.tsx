@@ -1,30 +1,32 @@
-import { Home as HomeIcon, Search, Library } from 'lucide-react'
+import { ArrowRight, ChevronDown, Home as HomeIcon, Library, Plus, Search } from 'lucide-react'
 
 export function Sidebar() {
   return (
-    <aside className="w-72 bg-zinc-950 p-6">
-      <div className='flex items-center gap-2'>
-        <div className='w-3 h-3 bg-red-500 rounded-full'></div>
-        <div className='w-3 h-3 bg-yellow-500 rounded-full'></div>
-        <div className='w-3 h-3 bg-green-500 rounded-full'></div>
-      </div>
-      <nav className='space-y-5 mt-10'>
+    <aside className="w-96 bg-zinc-950 px-2 pb-2">
+      <nav className='bg-white/5 space-y-5 mt-2 p-5 rounded-lg'>
         <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'><HomeIcon /> Home</a>
-        <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'><Search /> Search</a>
-        <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-200'><Library /> Your Library</a>
+        <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-300 transition-colors'><Search /> Search</a>
       </nav>
 
-      <nav className='mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3 text-sm text-zinc-400'>
-        <a href='' className='hover:text-zinc-100'>Playlist 1</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 2</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 3</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 4</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 5</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 6</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 7</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 8</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 9</a>
-        <a href='' className='hover:text-zinc-100'>Playlist 10</a>
+      <nav className='bg-white/5 mt-2 p-5 flex flex-col gap-3 text-sm text-zinc-400 rounded-lg'>
+        <div className='flex items-center justify-between'>
+          <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-300 transition-colors'><Library /> Your Library</a>
+          <div className='flex items-center gap-2'>
+            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-300 transition-colors'><Plus /></a>
+            <a href="" className='flex items-center gap-3 text-sm font-semibold text-zinc-400 hover:text-zinc-300 transition-colors'><ArrowRight /></a>
+          </div>
+        </div>
+        <div className='flex items-center gap-2 max-w-full my-2 overflow-hidden'>
+          <a className='min-w-fit px-3 py-1 bg-white/10 hover:bg-white/20 transition-colors text-white font-semibold rounded-full'>Playlists</a>
+          <a className='min-w-fit px-3 py-1 bg-white/10 hover:bg-white/20 transition-colors text-white font-semibold rounded-full'>Podcasts e Programas</a>
+          <a className='min-w-fit px-3 py-1 bg-white/10 hover:bg-white/20 transition-colors text-white font-semibold rounded-full'>Álbuns</a>
+          <a className='min-w-fit px-3 py-1 bg-white/10 hover:bg-white/20 transition-colors text-white font-semibold rounded-full'>Artistas</a>
+          <a className='min-w-fit px-3 py-1 bg-white/10 hover:bg-white/20 transition-colors text-white font-semibold rounded-full'>Baixados</a>
+        </div>
+        <div className='flex items-center justify-between'>
+          <a className='hover:text-zinc-300 transition-colors'><Search className='w-5 h-5' /></a>
+          <a className='flex items-center justify-between hover:text-zinc-300 transition-colors'>Recentes <ChevronDown className='w-4 h-4' /></a>
+        </div>
       </nav>
     </aside>
   )
